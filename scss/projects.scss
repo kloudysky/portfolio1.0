@@ -1,0 +1,13 @@
+.projects-slide {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 250px 0 100px;
+}
+
+.project-img {
+  margin-right: 10px;
+
+  img {
+    border-radius: 2%;
+  }
+}

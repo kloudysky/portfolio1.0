@@ -1,0 +1,17 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "scss": "node-sass --watch scss -o css",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.3.5"
+  },
+  "dependencies": {
+    "fullpage.js": "^3.1.1",
+    "node-sass": "^6.0.0",
+    "three": "^0.129.0"
+  }
+}
