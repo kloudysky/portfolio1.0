@@ -31,7 +31,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  border-bottom: 1px solid #414040;
+  border-bottom: 2px solid #414040;
   transform: scaleX(1); }
 
 #name-h1 {
@@ -68,3 +68,36 @@ body {
   right: 100px;
   color: #414040;
   border-color: transparent transparent transparent #414040; }
+
+.static-social-icons {
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  flex-basis: 0;
+  flex-grow: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); }
+
+.social-icon {
+  -webkit-font-smoothing: antialiased;
+  color: #414040;
+  font-size: 25px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: color 2s ease-in-out;
+  -moz-transition: color 2s ease-in-out;
+  -o-transition: color 2s ease-in-out;
+  transition: color 2s ease-in-out;
+  transition: transform 0.25s ease; }
+
+.social-icon:hover {
+  transform: translate(0, 2px);
+  color: #585858; }
+
+.social-line {
+  width: 2px;
+  height: 90px;
+  background-color: #414040; }

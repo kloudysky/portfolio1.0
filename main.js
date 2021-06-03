@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
       const border = CSSRulePlugin.getRule(".hero-text:before");
       const h1 = document.querySelector("#name-h1");
       const h2 = document.querySelector("#title-h2");
+      const icons = document.querySelector(".static-social-icons");
+      const email = document.querySelector(".side-email-link");
       const tl = gsap.timeline();
 
       tl.from(border, { delay: 0.5, duration: 4, cssRule: { scaleX: 0 } });
@@ -42,6 +44,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
           duration: 2,
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
           y: "40px",
+        },
+        "-=2"
+      );
+      tl.to(
+        icons,
+        {
+          duration: 2,
+          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+        },
+        "-=2"
+      );
+      tl.to(
+        email,
+        {
+          duration: 2,
+          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
         },
         "-=2"
       );
