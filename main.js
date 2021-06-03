@@ -1,7 +1,8 @@
 import "./css/style.css";
 
+// FullPage options
+
 new fullpage("#fullpage", {
-  // autoScrolling: true,
   scrollHorizontally: true,
   navigation: true,
   anchors: ["home", "projects", "about", "contact"],
@@ -11,6 +12,8 @@ new fullpage("#fullpage", {
   responsiveWidth: 1000,
   slidesNavigation: true,
 });
+
+//Animate Home Screen Headers
 
 document.addEventListener("DOMContentLoaded", function (event) {
   // wait until external stylesheets, links, images, and other external assets are loaded in the window
@@ -46,87 +49,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     false
   );
 });
-
-// import "./css/style.css";
-// import * as THREE from "three";
-// // import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-
-// const scene = new THREE.Scene();
-
-// const camera = new THREE.PerspectiveCamera(75, 500 / 500, 0.1, 1000);
-
-// const renderer = new THREE.WebGLRenderer({
-//   canvas: document.querySelector("#bg"),
-//   alpha: true,
-// });
-
-// renderer.setPixelRatio(window.devicePixelRatio);
-// renderer.setSize(500, 500);
-// camera.position.setZ(30);
-// camera.position.setX(-3);
-
-// renderer.render(scene, camera);
-
-// const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-
-// const material = new THREE.MeshBasicMaterial({
-//   color: 0xff6347,
-//   wireframe: true,
-// });
-// // const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
-// const torus = new THREE.Mesh(geometry, material);
-
-// scene.add(torus);
-
-// const pointLight = new THREE.PointLight(0xffffff);
-// pointLight.position.set(5, 5, 5);
-// const ambientLight = new THREE.AmbientLight(0xffffff);
-
-// scene.add(pointLight, ambientLight);
-
-// // const controls = new OrbitControls(camera, renderer.domElement);
-
-// function moveCamera() {
-//   const t = document.body.getBoundingClientRect().top;
-
-//   camera.position.z = t * -0.01;
-//   camera.position.x = t * -0.0002;
-//   camera.rotation.y = t * -0.0002;
-// }
-
-// document.body.onscroll = moveCamera;
-
-// function resizeCanvasToDisplaySize() {
-//   const canvas = renderer.domElement;
-//   // look up the size the canvas is being displayed
-//   const width = canvas.clientWidth;
-//   const height = canvas.clientHeight;
-
-//   // adjust displayBuffer size to match
-//   if (canvas.width !== width || canvas.height !== height) {
-//     // you must pass false here or three.js sadly fights the browser
-//     renderer.setSize(width, height, false);
-//     camera.aspect = width / height;
-//     camera.updateProjectionMatrix();
-
-//     // update any render target sizes here
-//   }
-// }
-
-// function animate() {
-//   resizeCanvasToDisplaySize();
-//   requestAnimationFrame(animate);
-
-//   torus.rotation.x += 0.01;
-//   torus.rotation.y += 0.005;
-//   torus.rotation.z += 0.01;
-
-//   // controls.update();
-
-//   renderer.render(scene, camera);
-// }
-
-// animate();
 
 // Particle Three js
 
@@ -164,9 +86,8 @@ particlesGeometry.setAttribute(
 const material = new THREE.PointsMaterial({ size: 0.01, color: "grey" });
 
 const particlesMaterial = new THREE.PointsMaterial({
-  size: 0.004,
+  size: 0.002,
   transparent: true,
-  map: crossParticle,
   color: "grey",
 });
 
@@ -235,6 +156,7 @@ const animateParticles = (event) => {
   mouseY = event.clientY;
   mouseX = event.clientX;
 };
+
 document.addEventListener("mousemove", animateParticles);
 
 let mouseX = 0;
@@ -251,14 +173,16 @@ const tick = () => {
 
   // Update objects
   sphere.rotation.y = 0.5 * elapsedTime;
-  particlesMesh.rotation.y = -0.1 * elapsedTime;
+  sphere.rotation.x = 0.5 * elapsedTime;
+  sphere.rotation.z = 0.5 * elapsedTime;
+  particlesMesh.rotation.y = 0.05 * elapsedTime;
+  particlesMesh.rotation.x = -0.01 * elapsedTime;
+  particlesMesh.rotation.z = -0.07 * elapsedTime;
 
   if (mouseX > 0) {
     particlesMesh.rotation.x = -mouseY * (elapsedTime * 0.000008);
     particlesMesh.rotation.y = -mouseX * (elapsedTime * 0.000008);
   }
-  // Update Orbital Controls
-  // controls.update()
 
   // Render
   renderer.render(scene, camera);
