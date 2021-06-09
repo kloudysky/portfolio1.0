@@ -1,13 +1,43 @@
 .projects-slide {
-  display: flex;
-  justify-content: space-around;
   padding: 0 250px 0 100px;
+  display: flex;
 }
 
 .project-img {
   margin-right: 10px;
 
   img {
-    border-radius: 2%;
+    min-width: 400px;
+    max-width: 700px;
+  }
+}
+
+.project-img-slide-1 {
+  margin-left: 20px;
+  margin-right: -40px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info-slide-1 {
+  text-align: right;
+}
+
+.project-details {
+  background-color: #62706ecc;
+  height: 200px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+
+  h3,
+  p {
+    color: white;
   }
 }

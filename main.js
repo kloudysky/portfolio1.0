@@ -193,13 +193,13 @@ const tick = () => {
   sphere.rotation.y = 0.5 * elapsedTime;
   sphere.rotation.x = 0.5 * elapsedTime;
   sphere.rotation.z = 0.5 * elapsedTime;
-  particlesMesh.rotation.y = 0.05 * elapsedTime;
+  particlesMesh.rotation.y = 0.008 * elapsedTime;
   particlesMesh.rotation.x = -0.01 * elapsedTime;
-  particlesMesh.rotation.z = -0.07 * elapsedTime;
+  particlesMesh.rotation.z = -0.006 * elapsedTime;
 
   if (mouseX > 0) {
-    particlesMesh.rotation.x = -mouseY * (elapsedTime * 0.000008);
-    particlesMesh.rotation.y = -mouseX * (elapsedTime * 0.000008);
+    particlesMesh.rotation.x = -mouseY * (elapsedTime * 0.000004);
+    particlesMesh.rotation.y = -mouseX * (elapsedTime * 0.000004);
   }
 
   // Render
