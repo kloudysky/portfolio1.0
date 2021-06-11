@@ -1,18 +1,47 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 .projects-slide {
-  padding: 0 250px 0 100px;
   display: flex;
   justify-content: center; }
+
+.projects-header {
+  width: 900px;
+  color: #414040;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 600; }
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center; }
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #414040; }
+
+.separator:not(:empty)::before {
+  margin-right: 0.25em; }
+
+.separator:not(:empty)::after {
+  margin-left: 0.25em; }
 
 .project-img {
   margin-right: 10px; }
   .project-img img {
     min-width: 400px;
-    max-width: 700px; }
+    max-width: 750px; }
 
 .project-img-slide-odd {
-  margin-left: 20px;
-  margin-right: -40px; }
+  margin-left: 15px;
+  margin-right: -65px; }
 
 .project-img-slide-even {
   margin-right: 20px;
@@ -25,7 +54,8 @@
     font-size: 35px; }
 
 .project-info-slide-odd {
-  text-align: right; }
+  text-align: right;
+  margin-right: 10px; }
 
 .project-info-slide-even {
   text-align: left; }
@@ -73,7 +103,7 @@
 .project-stack-odd {
   display: flex;
   list-style-type: none;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto Mono", monospace;
   flex-direction: row-reverse;
   font-size: 15px;
   margin-top: 25px;
