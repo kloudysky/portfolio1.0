@@ -14,7 +14,8 @@
   width: 500px; }
   .about-me p {
     line-height: 27px;
-    font-size: 18px; }
+    font-size: 18px;
+    color: #414040; }
 
 .my-picture {
   margin-left: 30px;
@@ -22,17 +23,20 @@
 
 li .stack-icon {
   font-size: 20px;
-  margin-right: 3px; }
+  margin-right: 3px;
+  color: #4d4d4d; }
 
 .project-stack-group {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: flex-start;
+  color: #414040; }
   .project-stack-group .project-stack-about {
     list-style-type: none;
     font-family: "Ubuntu", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 25px;
-    padding-left: 0; }
+    padding-left: 0;
+    margin-right: 25px; }
     .project-stack-group .project-stack-about li {
       margin-right: 10px;
       margin-top: 10px; }

@@ -76,7 +76,8 @@
   font-family: "Ubuntu", sans-serif;
   flex-direction: row-reverse;
   font-size: 15px;
-  margin-top: 25px; }
+  margin-top: 25px;
+  color: #414040; }
   .project-stack-odd li {
     margin-left: 10px; }
 
@@ -86,7 +87,8 @@
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
   margin-top: 25px;
-  padding-left: 0; }
+  padding-left: 0;
+  color: #414040; }
   .project-stack-even li {
     margin-right: 10px; }
 

@@ -20,6 +20,7 @@
   p {
     line-height: 27px;
     font-size: 18px;
+    color: rgb(65, 64, 64);
   }
 }
 
@@ -32,18 +33,22 @@ li {
   .stack-icon {
     font-size: 20px;
     margin-right: 3px;
+    color: rgb(77, 77, 77);
   }
 }
 
 .project-stack-group {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  color: rgb(65, 64, 64);
+
   .project-stack-about {
     list-style-type: none;
     font-family: "Ubuntu", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 25px;
     padding-left: 0;
+    margin-right: 25px;
     li {
       margin-right: 10px;
       margin-top: 10px;
