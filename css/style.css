@@ -2,26 +2,22 @@
 @import url(about.css);
 @import url(contact.css);
 body {
-  font-family: "Roboto", sans-serif;
-}
-body h1,
-body h2,
-body h3,
-body p {
-  color: #414040;
-}
+  font-family: "Roboto", sans-serif; }
+  body h1,
+  body h2,
+  body h3,
+  body p {
+    color: #414040; }
 
 .hero-canvas {
   position: fixed;
   top: 0;
   left: 0;
-  outline: none;
-}
+  outline: none; }
 
 .hero {
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .hero-text {
   z-index: 1;
@@ -29,8 +25,7 @@ body p {
   display: flex;
   gap: 5em;
   position: relative;
-  align-items: center;
-}
+  align-items: center; }
 
 .hero-text:before {
   content: "";
@@ -39,50 +34,42 @@ body p {
   left: 0;
   width: 100%;
   border-bottom: 2px solid #414040;
-  transform: scaleX(1);
-}
+  transform: scaleX(1); }
 
 #name-h1 {
   font-size: 4rem;
   width: 50vw;
   line-height: 97%;
-  text-align: right;
-}
+  text-align: right; }
 
 #name-h1,
 #title-h2 {
   flex-basis: 0;
   flex-grow: 1;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-}
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); }
 
 #title-h2 {
   font-size: 2rem;
-  width: 40vw;
-}
+  width: 40vw; }
 
 #fp-nav ul li:hover .fp-tooltip,
 #fp-nav.fp-show-active a.active + .fp-tooltip {
-  color: #414040;
-}
+  color: #414040; }
 
 .fp-slidesNav.fp-bottom {
   bottom: 30px;
-  text-align: center;
-}
+  text-align: center; }
 
 .fp-controlArrow.fp-prev {
   left: 100px;
   width: 0;
   border-width: 38.5px 34px 38.5px 0;
-  border-color: transparent #414040 transparent transparent;
-}
+  border-color: transparent #414040 transparent transparent; }
 
 .fp-controlArrow.fp-next {
   right: 100px;
   color: #414040;
-  border-color: transparent transparent transparent #414040;
-}
+  border-color: transparent transparent transparent #414040; }
 
 .static-social-icons {
   position: absolute;
@@ -94,8 +81,7 @@ body p {
   z-index: 1;
   flex-basis: 0;
   flex-grow: 1;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-}
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); }
 
 .social-icon {
   -webkit-font-smoothing: antialiased;
@@ -107,16 +93,13 @@ body p {
   -moz-transition: color 2s ease-in-out;
   -o-transition: color 2s ease-in-out;
   transition: color 2s ease-in-out;
-  transition: transform 0.25s ease;
-}
+  transition: transform 0.25s ease; }
 
 .social-icon:hover {
   transform: translate(0, 2px);
-  color: #585858;
-}
+  color: #585858; }
 
 .social-line {
   width: 2px;
   height: 90px;
-  background-color: #414040;
-}
+  background-color: #414040; }

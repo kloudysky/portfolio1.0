@@ -1,13 +1,11 @@
 .contact-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
 
 .contact-cta-detail {
   width: 500px;
-  text-align: center;
-}
+  text-align: center; }
 
 .cta-btn {
   height: 50px;
@@ -16,5 +14,4 @@
   color: #414040;
   background: none;
   font-size: 25px;
-  border-radius: 3px;
-}
+  border-radius: 3px; }

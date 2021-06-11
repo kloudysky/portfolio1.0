@@ -140,6 +140,19 @@
   }
 }
 
+.project-stack-odd-2-row {
+  display: flex;
+  list-style-type: none;
+  font-family: "Roboto Mono", monospace;
+  flex-direction: row-reverse;
+  font-size: 15px;
+  margin-top: 5px;
+  color: rgb(65, 64, 64);
+  li {
+    margin-left: 10px;
+  }
+}
+
 .project-stack-even {
   display: flex;
   list-style-type: none;

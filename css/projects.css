@@ -111,6 +111,17 @@
   .project-stack-odd li {
     margin-left: 10px; }
 
+.project-stack-odd-2-row {
+  display: flex;
+  list-style-type: none;
+  font-family: "Roboto Mono", monospace;
+  flex-direction: row-reverse;
+  font-size: 15px;
+  margin-top: 5px;
+  color: #414040; }
+  .project-stack-odd-2-row li {
+    margin-left: 10px; }
+
 .project-stack-even {
   display: flex;
   list-style-type: none;
