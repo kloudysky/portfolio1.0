@@ -1,0 +1,52 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 300px 0 300px;
+  align-items: center;
+}
+
+.about-me-header {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+.me-info {
+  display: flex;
+}
+
+.about-me {
+  width: 500px;
+  p {
+    line-height: 27px;
+    font-size: 18px;
+  }
+}
+
+.my-picture {
+  margin-left: 30px;
+  width: 200px;
+}
+
+li {
+  .stack-icon {
+    font-size: 20px;
+    margin-right: 3px;
+  }
+}
+
+.project-stack-group {
+  display: flex;
+  justify-content: space-evenly;
+  .project-stack-about {
+    list-style-type: none;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    margin-top: 25px;
+    padding-left: 0;
+    li {
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+  }
+}

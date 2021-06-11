@@ -1,6 +1,7 @@
 .projects-slide {
   padding: 0 250px 0 100px;
   display: flex;
+  justify-content: center;
 }
 
 .project-img {
@@ -12,32 +13,130 @@
   }
 }
 
-.project-img-slide-1 {
+.project-img-slide-odd {
   margin-left: 20px;
   margin-right: -40px;
+}
+
+.project-img-slide-even {
+  margin-right: 20px;
+  margin-left: -40px;
 }
 
 .project-info {
   display: flex;
   flex-direction: column;
+  h3 {
+    font-size: 35px;
+  }
 }
 
-.project-info-slide-1 {
+.project-info-slide-odd {
   text-align: right;
 }
 
-.project-details {
-  background-color: #62706ecc;
-  height: 200px;
-  width: 500px;
+.project-info-slide-even {
+  text-align: left;
+}
+
+.project-details-odd {
+  background-color: #62706e;
+  height: 100px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 3px;
+  text-align: right;
+  padding-left: 22px;
+  padding-right: 20px;
+  -webkit-box-shadow: 5px 5px 29px -4px #000000;
+  box-shadow: 5px 5px 29px -4px #000000;
+
+  p {
+    font-weight: 300;
+  }
 
   h3,
   p {
     color: white;
   }
+}
+
+.project-details-even {
+  background-color: #62706e;
+  height: 100px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 22px;
+  -webkit-box-shadow: -1px 8px 29px -4px #000000;
+  box-shadow: -1px 8px 29px -4px #000000;
+
+  p {
+    font-weight: 300;
+  }
+
+  h3,
+  p {
+    color: white;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+.project-stack-odd {
+  display: flex;
+  list-style-type: none;
+  font-family: "Ubuntu", sans-serif;
+  flex-direction: row-reverse;
+  font-size: 15px;
+  margin-top: 25px;
+  li {
+    margin-left: 10px;
+  }
+}
+
+.project-stack-even {
+  display: flex;
+  list-style-type: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  margin-top: 25px;
+  padding-left: 0;
+  li {
+    margin-right: 10px;
+  }
+}
+
+.project-links-odd {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+
+  .fa-github-square {
+    font-size: 32px;
+  }
+}
+
+.project-links-even {
+  display: flex;
+  margin-top: 10px;
+
+  .fa-github-square {
+    font-size: 32px;
+  }
+}
+
+.project-links-btn {
+  font-size: 30px;
+  color: #414040;
+  margin: 10px;
+  cursor: pointer;
 }
