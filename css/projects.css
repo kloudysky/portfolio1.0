@@ -37,11 +37,11 @@
   margin-right: 10px; }
   .project-img img {
     min-width: 400px;
-    max-width: 750px; }
+    max-width: 700px; }
 
 .project-img-slide-odd {
-  margin-left: 15px;
-  margin-right: -65px; }
+  margin-left: 10px;
+  margin-right: -40px; }
 
 .project-img-slide-even {
   margin-right: 20px;
@@ -49,7 +49,9 @@
 
 .project-info {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1; }
   .project-info h3 {
     font-size: 35px; }
 
@@ -83,7 +85,7 @@
 .project-details-even {
   background-color: #62706e;
   height: 100px;
-  width: 400px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,10 +124,21 @@
   .project-stack-odd-2-row li {
     margin-left: 10px; }
 
+.project-stack-even-2-row {
+  display: flex;
+  list-style-type: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  margin-top: 5px;
+  padding-left: 0;
+  color: #414040; }
+  .project-stack-even-2-row li {
+    margin-right: 10px; }
+
 .project-stack-even {
   display: flex;
   list-style-type: none;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 15px;
   margin-top: 25px;
   padding-left: 0;
