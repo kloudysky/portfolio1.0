@@ -47,6 +47,8 @@
   padding-top: 60px; }
 
 .mobile-hero {
+  height: 100vh;
+  min-height: 550px;
   display: flex;
   background-color: #ed944d;
   justify-content: space-around; }
@@ -147,9 +149,19 @@
   height: 90px;
   background-color: #414040; }
 
+.mobile-projects-section-header {
+  margin-bottom: 40px; }
+
+.mobile-project {
+  margin-top: 50px; }
+
 .mobile-project-img-1 img {
   width: 100%;
   margin-left: 40px; }
+
+.mobile-project-img-2 img {
+  width: 100%;
+  margin-left: -40px; }
 
 .mobile-project-info-slide-odd {
   text-align: right;
@@ -161,7 +173,13 @@
     font-size: 35px; }
 
 .mobile-project-info-slide-even {
-  text-align: left; }
+  text-align: left;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .mobile-project-info-slide-even h3 {
+    font-size: 35px; }
 
 .mobile-project-details-odd {
   background-color: #62706e;
@@ -187,30 +205,31 @@
 .mobile-separator {
   display: flex;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  width: 80%; }
 
-.mobile-separator::before {
+.mobile-separator::after {
   content: "";
   flex: 1;
-  border-bottom: 1px solid #414040; }
+  border-bottom: 1px solid #414040;
+  margin-left: 20px; }
 
 .mobile-separator:not(:empty)::before {
   margin-right: 0.25em; }
 
 .mobile-project-details-even {
   background-color: #62706e;
-  height: 100px;
-  width: 400px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 3px;
   text-align: left;
-  padding-left: 20px;
-  padding-right: 22px;
+  padding: 18px 22px 18px 20px;
   -webkit-box-shadow: -1px 8px 29px -4px #000000;
-  box-shadow: -1px 8px 29px -4px #000000; }
+  box-shadow: -1px 8px 29px -4px #000000;
+  z-index: 1; }
   .mobile-project-details-even p {
     font-weight: 300; }
   .mobile-project-details-even h3,
@@ -242,7 +261,7 @@
 .mobile-project-stack-even {
   display: flex;
   list-style-type: none;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 15px;
   margin-top: 25px;
   padding-left: 0;
@@ -292,6 +311,26 @@
   padding-left: 0; }
   .mobile-responsive-project-stack li {
     margin-right: 10px; }
+
+.mobile-about-header {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  width: 80%; }
+  .mobile-about-header h1 {
+    text-align: right; }
+
+.mobile-about-separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 80%; }
+
+.mobile-about-separator::before {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #414040;
+  margin-left: 20px; }
 
 @media only screen and (min-width: 770px) {
   .mobile-responsive-project {
