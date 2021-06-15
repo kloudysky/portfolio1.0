@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+.grid-sections {
+  display: grid;
+  grid-template-columns: auto auto 50px 50px; }
+
+.mobile-container {
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+/* Style the navbar */
+#navbar {
+  display: flex;
+  overflow: hidden;
+  background-color: #ed944d;
+  margin-right: auto;
+  justify-content: space-between; }
+
+.navbar-icon {
+  color: #414040; }
+
+.navbar-links {
+  display: flex; }
+
+/* Navbar links */
+.navbar-links a {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 14px;
+  display: block;
+  color: #414040;
+  padding: 14px;
+  text-decoration: none; }
+
+/* Page content */
+.content {
+  padding: 16px; }
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px; }
+
+.mobile-hero {
+  display: flex;
+  background-color: #ed944d;
+  justify-content: space-around; }
+
+.mobile-hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .mobile-hero-text h3 {
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: 400; }
+  .mobile-hero-text p {
+    color: #4c4c4c;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    width: 600px; }
+  .mobile-hero-text h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-top: 0; }
+  .mobile-hero-text h2 {
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0; }
+
+.mobile-hero-btn {
+  font-family: "Roboto Mono", monospace;
+  background: none;
+  border: 2px solid #414040;
+  color: #414040;
+  height: 60px;
+  width: 155px;
+  border-radius: 3px;
+  font-size: 17px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s; }
+
+.mobile-hero-btn:hover {
+  background-color: #414040;
+  color: white; }
+
+.mobile-static-email-link {
+  position: fixed;
+  bottom: 0;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25px; }
+
+.mobile-static-email {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 100px;
+  color: #414040;
+  cursor: pointer;
+  transform: rotate(90deg);
+  transition: 0.3s; }
+
+.mobile-static-email:hover {
+  color: #585858; }
+
+.mobile-email-line {
+  width: 2px;
+  height: 90px;
+  background-color: #414040; }
+
+.mobile-static-social-icons {
+  position: fixed;
+  bottom: 0;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.mobile-social-icon {
+  -webkit-font-smoothing: antialiased;
+  color: #414040;
+  font-size: 25px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: color 2s ease-in-out;
+  -moz-transition: color 2s ease-in-out;
+  -o-transition: color 2s ease-in-out;
+  transition: color 2s ease-in-out;
+  transition: transform 0.25s ease; }
+
+.mobile-social-icon:hover {
+  transform: translate(0, 2px);
+  color: #585858; }
+
+.mobile-social-line {
+  width: 2px;
+  height: 90px;
+  background-color: #414040; }
+
+.mobile-project-img-1 img {
+  width: 100%;
+  margin-left: 40px; }
+
+.mobile-project-info-slide-odd {
+  text-align: right;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .mobile-project-info-slide-odd h3 {
+    font-size: 35px; }
+
+.mobile-project-info-slide-even {
+  text-align: left; }
+
+.mobile-project-details-odd {
+  background-color: #62706e;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  text-align: right;
+  padding: 18px 20px 18px 22px;
+  -webkit-box-shadow: 5px 5px 29px -4px #000000;
+  box-shadow: 5px 5px 29px -4px #000000; }
+  .mobile-project-details-odd p {
+    font-weight: 300; }
+  .mobile-project-details-odd h3,
+  .mobile-project-details-odd p {
+    color: white; }
+
+.mobile-project-info-title {
+  width: 90%; }
+
+.mobile-separator {
+  display: flex;
+  align-items: center;
+  text-align: center; }
+
+.mobile-separator::before {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #414040; }
+
+.mobile-separator:not(:empty)::before {
+  margin-right: 0.25em; }
+
+.mobile-project-details-even {
+  background-color: #62706e;
+  height: 100px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 22px;
+  -webkit-box-shadow: -1px 8px 29px -4px #000000;
+  box-shadow: -1px 8px 29px -4px #000000; }
+  .mobile-project-details-even p {
+    font-weight: 300; }
+  .mobile-project-details-even h3,
+  .mobile-project-details-even p {
+    color: white; }
+
+.mobile-project-stack-odd {
+  display: flex;
+  list-style-type: none;
+  font-family: "Roboto Mono", monospace;
+  flex-direction: row-reverse;
+  font-size: 15px;
+  margin-top: 25px;
+  color: #414040; }
+  .mobile-project-stack-odd li {
+    margin-left: 10px; }
+
+.mobile-project-stack-odd-2-row {
+  display: flex;
+  list-style-type: none;
+  font-family: "Roboto Mono", monospace;
+  flex-direction: row-reverse;
+  font-size: 15px;
+  margin-top: 5px;
+  color: #414040; }
+  .mobile-project-stack-odd-2-row li {
+    margin-left: 10px; }
+
+.mobile-project-stack-even {
+  display: flex;
+  list-style-type: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  margin-top: 25px;
+  padding-left: 0;
+  color: #414040; }
+  .mobile-project-stack-even li {
+    margin-right: 10px; }
+
+.mobile-project-links-odd {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10px; }
+  .mobile-project-links-odd .fa-github-square {
+    font-size: 32px; }
+
+.mobile-project-links-even {
+  display: flex;
+  margin-top: 10px; }
+  .mobile-project-links-even .fa-github-square {
+    font-size: 32px; }
+
+.mobile-project-links-btn {
+  font-size: 30px;
+  color: #414040;
+  margin: 10px;
+  cursor: pointer; }
+
+.mobile-responsive-project-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px;
+  height: 300px; }
+
+.mobile-responsive-project-1 {
+  background: linear-gradient(0deg, rgba(237, 148, 77, 0.6), rgba(237, 148, 77, 0.6)), url("assets/strifeapp.png") no-repeat center/contain; }
+
+.mobile-responsive-project-2 {
+  background: linear-gradient(0deg, rgba(237, 148, 77, 0.6), rgba(237, 148, 77, 0.6)), url("https://media.giphy.com/media/N8HhQ0F0JLwGrSA0g9/giphy.gif") no-repeat center/contain; }
+
+.mobile-responsive-project-stack {
+  display: flex;
+  list-style-type: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  color: #414040;
+  padding-left: 0; }
+  .mobile-responsive-project-stack li {
+    margin-right: 10px; }
+
+@media only screen and (min-width: 770px) {
+  .mobile-responsive-project {
+    display: none; } }
+
+@media only screen and (max-width: 770px) {
+  .mobile-static-social-icons {
+    display: none; }
+  .mobile-static-email-link {
+    display: none; }
+  .mobile-project-odd {
+    display: none; } }

@@ -9,9 +9,30 @@ new fullpage("#fullpage", {
   navigationTooltips: ["home", "projects", "about", "contact"],
   showActiveTooltip: true,
   sectionsColor: ["#ed944d", "#88EFE2", "#ED944C", "#29BA7F"],
-  responsiveWidth: 1000,
+  responsiveWidth: 1400,
   slidesNavigation: true,
 });
+
+//responsive navbar
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () {
+  myFunction();
+};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 
 //Animate Home Screen Headers
 
