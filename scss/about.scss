@@ -6,9 +6,24 @@
 }
 
 .about-me-header {
+  width: 85%;
+  margin-bottom: 40px;
   h2 {
     font-size: 40px;
+    padding-right: 25px;
   }
+}
+
+.about-separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.about-separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #414040;
 }
 
 .me-info {
@@ -27,6 +42,9 @@
 .my-picture {
   margin-left: 30px;
   width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 li {

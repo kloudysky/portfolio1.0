@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 .projects-slide {
   display: flex;
   justify-content: center;
@@ -41,10 +43,14 @@
 
 .project-img {
   margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   img {
-    min-width: 400px;
-    max-width: 700px;
+    // min-width: 400px;
+    // max-width: 700px;
+    width: 725px;
   }
 }
 
@@ -65,6 +71,11 @@
   z-index: 1;
   h3 {
     font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: rgb(204, 204, 204);
   }
 }
 
@@ -79,16 +90,15 @@
 
 .project-details-odd {
   background-color: #62706e;
-  height: 100px;
-  width: 400px;
+  height: auto;
+  width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 3px;
   text-align: right;
-  padding-left: 22px;
-  padding-right: 20px;
+  padding: 30px 22px 22px 24px;
   -webkit-box-shadow: 5px 5px 29px -4px #000000;
   box-shadow: 5px 5px 29px -4px #000000;
 
@@ -104,16 +114,15 @@
 
 .project-details-even {
   background-color: #62706e;
-  height: 100px;
-  width: 450px;
+  height: auto;
+  width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 3px;
   text-align: left;
-  padding-left: 20px;
-  padding-right: 22px;
+  padding: 30px 24px 22px 22px;
   -webkit-box-shadow: -1px 8px 29px -4px #000000;
   box-shadow: -1px 8px 29px -4px #000000;
 
@@ -127,15 +136,13 @@
   }
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-
 .project-stack-odd {
   display: flex;
   list-style-type: none;
   font-family: "Roboto Mono", monospace;
   flex-direction: row-reverse;
   font-size: 15px;
-  margin-top: 25px;
+  margin-top: 35px;
   color: rgb(65, 64, 64);
   li {
     margin-left: 10px;
@@ -173,7 +180,7 @@
   list-style-type: none;
   font-family: "Roboto Mono", monospace;
   font-size: 15px;
-  margin-top: 25px;
+  margin-top: 35px;
   padding-left: 0;
   color: rgb(65, 64, 64);
   li {

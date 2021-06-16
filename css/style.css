@@ -9,7 +9,8 @@ body {
   body h1,
   body h2,
   body h3,
-  body p {
+  body p,
+  body a {
     color: #414040; }
 
 .hero-canvas {

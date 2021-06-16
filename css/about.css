@@ -4,8 +4,22 @@
   padding: 0 300px 0 300px;
   align-items: center; }
 
-.about-me-header h2 {
-  font-size: 40px; }
+.about-me-header {
+  width: 85%;
+  margin-bottom: 40px; }
+  .about-me-header h2 {
+    font-size: 40px;
+    padding-right: 25px; }
+
+.about-separator {
+  display: flex;
+  align-items: center;
+  text-align: center; }
+
+.about-separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #414040; }
 
 .me-info {
   display: flex; }
@@ -19,7 +33,10 @@
 
 .my-picture {
   margin-left: 30px;
-  width: 200px; }
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 li .stack-icon {
   font-size: 20px;
